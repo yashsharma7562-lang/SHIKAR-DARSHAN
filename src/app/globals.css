@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d4a574;
+  --color-primary-dark: #b8935f;
+  --color-secondary: #8b6f47;
+  --color-accent: #f4e5d3;
+  --color-background: #fdfcfa;
+  --color-surface: #ffffff;
+  --color-text: #2d2520;
+  --color-text-light: #6b5d54;
+  --color-spiritual: #ff9933;
+  --color-spiritual-light: #fff5eb;
+  
+  --font-family-serif: var(--font-cormorant), serif;
+  --font-family-sans: var(--font-inter), sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+  font-weight: 600;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.spiritual-gradient {
+  background: linear-gradient(135deg, #fff5eb 0%, #fdfcfa 50%, #f4e5d3 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4a574 0%, #b8935f 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #d4a574 0%, #8b6f47 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
